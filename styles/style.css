@@ -85,6 +85,7 @@ ion-icon{
 
 section .link-list a{
   position: relative;
+  padding: 10px ;
 }
 
 .profile{
@@ -93,6 +94,7 @@ section .link-list a{
   flex-flow: column;
   text-align: center;
   align-items: center;
+  padding: 2%;
 
 }
 
@@ -111,9 +113,18 @@ section img {
 
 .description {
 text-transform: uppercase;
-font-family: "Times New Roman";
+  font-family: "Times New Roman", serif;
 font-weight: 900;
 display: flex;
 position: relative;
 
 }
+
+.WIP {
+  background: white;
+  font-weight: 900;
+  font-size: 2rem;
+  border-radius: 20px;
+  padding: 5px;
+}
+
