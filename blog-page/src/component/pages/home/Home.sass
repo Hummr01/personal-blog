@@ -1,3 +1,9 @@
+@import "../../styles/Main"
+
+
+html, body
+  @include resetStyle
+
 
 .profile-section
   margin: 5px
@@ -6,7 +12,6 @@
   align-items: center
   justify-content: center
   height: 90vh
-
 
 
 .profile
@@ -28,4 +33,28 @@
 .description
   position: relative
   display: block
+  font-family: $ttf-standard
+  padding: 10px
+  margin: 0
+
+
+.social-logo
+  color: white
+  border-radius: 20px
+  float: left
+  padding-left: 1rem
+  padding-right: 1rem
+  padding-top: 0
+
+
+.icon
+  color: #444444
+  font-size: 2.5em
+  font-weight: 900
+  transition: all .2s ease-in-out
+  padding: 10px
+
+.icon:hover
+  transform: scale(1.5)
+
 
