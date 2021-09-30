@@ -1,6 +1,6 @@
 @import "../../styles/Main"
 
-ul
+.nav-links
   @include resetStyle
   text-decoration: none
 
@@ -22,7 +22,59 @@ ul
   border-radius: 20px
 
 
-
 .link:hover
-  background:  $black
+  background: $black
   color: white
+
+@media screen and (max-width: 760px)
+
+
+  .hamburger-menu
+    display: block
+    position: relative
+    cursor: pointer
+    height: 100vh
+
+
+  .hamburger-menu, .hamburger::before,
+  .hamburger::after
+    width: 2em
+    height: 3px
+    background: $hamburger-color
+    transition: transform 250ms ease-in-out
+
+
+  .hamburger::before,
+  .hamburger::after
+    content: ''
+    position: absolute
+    left: 0
+
+  .hamburger::before
+    bottom: 10px
+
+  .hamburger::after
+    top: 10px
+
+  .nav-links
+    position: fixed
+    background: $header-color
+    height: 100vh
+    width: 20%
+    transform: translateX(100%)
+
+  /*Animation*/
+  .hamburger-menu.open
+    .hamburger
+      transform: translateX(-50px)
+      background: transparent
+      box-shadow: none
+      display: none
+
+    .nav-links
+      transform: translateX(0)
+
+
+
+
+

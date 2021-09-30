@@ -14,17 +14,17 @@ export default function Home() {
                 <p className="description">Student, Punk and Nerd.</p>
                 <ul className="social-links">
                     <li className="social-logo">
-                        <a href="https://github.com/hummr01" target={"_blank"}>
+                        <a href="https://github.com/hummr01" target={"_blank"} rel="noreferrer">
                             <FontAwesomeIcon icon={faGithub} className={"icon"}/>
                         </a>
                     </li>
                     <li className="social-logo">
-                        <a href="https://twitter.com/hummr01" target={"_blank"}>
+                        <a href="https://twitter.com/hummr01" target={"_blank"} rel="noreferrer">
                             <FontAwesomeIcon icon={faTwitter} className="icon"/>
                         </a>
                     </li>
                     <li className="social-logo">
-                        <a href="https://www.twitch.tv/hummr01" target={"_blank"}>
+                        <a href="https://www.twitch.tv/hummr01" target={"_blank"} rel="noreferrer">
                             <FontAwesomeIcon icon={faTwitch} className={"icon"}/>
                         </a>
                     </li>
