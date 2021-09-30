@@ -7,13 +7,22 @@ html,body
 
 .top
   display: flex
-  justify-content: space-evenly
+  justify-content: space-between
   align-items: center
   background: sandybrown
 
-  .logo-link
-    @include resetLink
-    font-family: $ttf-standard
-    color: $black
-    font-size: 1.5em
-    text-transform: uppercase
+  .logo
+    left: 20%
+    position: relative
+
+    .logo-link
+      @include resetLink
+      font-family: $ttf-standard
+      color: $black
+      font-size: 1.5em
+      text-transform: uppercase
+
+  .navbar
+    position: relative
+    right: 20%
+
