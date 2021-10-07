@@ -30,7 +30,7 @@
 
 
   .hamburger-menu
-    display: block
+    display: flex
     position: relative
     cursor: pointer
     height: 100vh
@@ -57,22 +57,25 @@
     top: 10px
 
   .nav-links
+    display: flex
+    flex-direction: column
     position: fixed
     background: $header-color
-    height: 100vh
-    width: 20%
+    height: 100%
+    width: 25%
+    top: 0
+    right: 0
     transform: translateX(100%)
+    transition: ease 250ms
 
-  /*Animation*/
-  .hamburger-menu.open
-    .hamburger
-      transform: translateX(-50px)
-      background: transparent
-      box-shadow: none
-      display: none
+  .open.nav-links
+    transform: translateX(0)
 
-    .nav-links
-      transform: translateX(0)
+  .open.hamburger-menu
+    transform: translateX(-150px)
+
+
+
 
 
 

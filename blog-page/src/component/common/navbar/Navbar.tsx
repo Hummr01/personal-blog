@@ -1,26 +1,22 @@
-import React from "react";
+import React, {useState} from "react";
 import {Link} from "react-router-dom";
 
 
 import "./Navbar.css"
 
 
-let menuOpen: boolean = true;
-
-
-function menuClick() {
-
-    menuOpen = !menuOpen;
-
-}
-
 export default function Navbar() {
+
+    const [openMenu, setMenu] = useState(false);
+
+
     return (
         <nav>
-            <div className={`${menuOpen ? "open" : ""} hamburger-menu`} onClick={() => menuClick()}>
+            <div className={` ${openMenu ? "hamburger-menu open" : "hamburger-menu"}`}
+                 onClick={() => setMenu(!openMenu)}>
                 <span className="hamburger"/>
             </div>
-            <ul className={`${menuOpen ? "open" : ""} nav-links`}>
+            <ul className={`${openMenu ? "open" : ""} nav-links`}>
                 <li className="list-item">
                     <Link to='/' className="link">
                         Home
